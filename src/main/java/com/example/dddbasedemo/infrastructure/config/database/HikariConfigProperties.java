@@ -1,4 +1,4 @@
-package com.example.dddbasedemo.config.database;
+package com.example.dddbasedemo.infrastructure.config.database;
 
 
 import lombok.Data;

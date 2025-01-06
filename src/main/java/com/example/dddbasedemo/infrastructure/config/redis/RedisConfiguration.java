@@ -1,4 +1,4 @@
-package com.example.dddbasedemo.config.redis;
+package com.example.dddbasedemo.infrastructure.config.redis;
 
 import org.redisson.Redisson;
 import org.redisson.api.RedissonClient;
