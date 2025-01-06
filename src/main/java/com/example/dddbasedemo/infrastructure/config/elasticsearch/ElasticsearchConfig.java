@@ -1,4 +1,4 @@
-package com.example.dddbasedemo.config.elasticsearch;
+package com.example.dddbasedemo.infrastructure.config.elasticsearch;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
