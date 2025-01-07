@@ -13,7 +13,7 @@ public class TestModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", columnDefinition = "INT(11)")
-    private Integer id;
+    private Long id;
 
     @Column(name = "name", columnDefinition = "VARCHAR(50)")
     private String name;

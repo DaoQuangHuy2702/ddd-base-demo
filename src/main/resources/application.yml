@@ -10,29 +10,18 @@ spring:
   application:
     name: DDD-Base-Demo
   datasource:
-    driver-class-name: org.mariadb.jdbc.Driver
+    datasource:
+      url: jdbc:oracle:thin:@//localhost:1521/orcl
+      username: your_username
+      password: your_password
+      driver-class-name: oracle.jdbc.OracleDriver
+      jpa:
+        database-platform: org.hibernate.dialect.Oracle12cDialect
+        show-sql: true
+        hibernate:
+          ddl-auto: update
   cache:
     type: redis
-  data:
-    mongodb:
-      uri: ${MONGODB_URI:mongodb+srv://daoquanghuy2702:quanghuy2702@cluster0.w30cwhv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0}
-      database: ${MONGODB_DATABASE:lao_network}
-    redis:
-      address: ${REDIS_ADDRESS:redis://127.0.0.1:6379}
-
-database:
-  jdbcUrl: ${DB_URL:jdbc:mysql://localhost:3306/demo}
-  username: ${DB_USERNAME:root}
-  password: ${DB_PASSWORD:123456}
-
-hikari:
-  minimum-idle: 1500
-  maximum-pool-size: 30000
-  idle-timeout: 30000
-  max-lifetime: 1800000
-  connection-test-query: SELECT 1
-  pool-name: ApiAppHikariPool
-  driverClass: org.mariadb.jdbc.Driver
 
 elasticsearch:
   host: huy-search-7190964019.us-east-1.bonsaisearch.net:443
